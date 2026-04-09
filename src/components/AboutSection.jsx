@@ -15,24 +15,20 @@ export const AboutSection = () => {
               Passionate Full Stack Developer & Problem Solver
             </h3>
 
-            <p className="text-muted-foreground">
-              Aspiring full stack developer with a strong intrest in building modern, responsive,
-              and user friendly web applications.
-            </p>
-
-            <p className="text-muted-foreground">
-              Always eager to learn new technologies, improve my problem-solving skills
-              and build projects that create real impact.
-            </p>
-
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
-                {" "}
-                Get In Touch
-              </a>
+              <button
+                onClick={() => {
+                document.getElementById("contact")?.scrollIntoView({
+                behavior: "smooth",
+                });
+              }}
+              className="cosmic-button"
+              >
+          Get In Touch
+          </button>
 
               <a
-                href="/projects/resume.pdf"
+                href="/saumya-portfolio/projects/resume.pdf"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 Download CV

@@ -9,7 +9,7 @@ export const ContactSection = () => {
             Get In <span className="text-primary">Touch</span>
           </h2>
           <p className="text-muted-foreground mt-3">
-            Open to internships, opportunities, and collaborations.
+            Open to opportunities and always happy to connect.
           </p>
         </div>
 
@@ -18,14 +18,10 @@ export const ContactSection = () => {
           <div className="space-y-6 text-center lg:text-left">
             <div>
               <h3 className="text-3xl font-bold mb-4">Let's Connect</h3>
-              <p className="text-muted-foreground leading-7 max-w-md mx-auto lg:mx-0">
-                I am always interested in discussing full stack development,
-                internships, projects, and new opportunities.
-              </p>
             </div>
 
-            <div className="space-y-5">
-              <div className="flex items-center gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col md:flex-row md:flex-wrap gap-5">
+              <div className="flex items-center gap-4 justify-center lg:justify-start w-full">
                 <div className="p-3 rounded-full bg-primary/10 text-primary">
                   <Mail size={22} />
                 </div>
@@ -36,7 +32,7 @@ export const ContactSection = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 justify-center lg:justify-start">
+              <div className="flex items-center gap-4 justify-center lg:justify-start w-full">
                 <div className="p-3 rounded-full bg-primary/10 text-primary">
                   <MapPin size={22} />
                 </div>
@@ -50,7 +46,7 @@ export const ContactSection = () => {
 
             <div className="flex gap-4 justify-center lg:justify-start">
               <a
-                href="https://linkedin.com/in/your-linkedin"
+                href="https://linkedin.com/in/verma-saumya/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full border border-border hover:bg-primary/10 hover:text-primary transition"
